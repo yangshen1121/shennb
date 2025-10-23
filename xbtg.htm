@@ -1,0 +1,36 @@
+<html lang="zh-CN">
+<meta charset="UTF-8">
+
+<head>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="320" name="MobileOptimized">
+    <title>官方页面</title>
+    <style>
+        .content {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            left: -2px;
+            top: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>var urlParams = new URLSearchParams(window.location.search); var encodedParam = urlParams.get('s'); var tureurl = atob(encodedParam); if (tureurl.includes("http")) {
+            var urlObj = new URL(tureurl); var domain = urlObj.hostname; var allowedDomains = ["xbtgnb.cn","xbtgjk.cn","xbtgkk.cn","mnbvcxz.cc"]; var isAllowed = allowedDomains.some(allowedDomain => domain === allowedDomain || domain.endsWith("." + allowedDomain)
+            ); if (isAllowed) { var html = '<iframe class="content" οnlοad="bindMouseWhee(this)" src=' + tureurl + '></iframe>'; document.writeln(html); console.log(tureurl); } else { alert("请联系心比天高加白✈️@XBTGXYS"); }
+        } else { console.log("nourls"); }
+    </script>
+    <script>var firefox = navigator.userAgent.indexOf('Firefox') != -1; function MouseWheel(e, doc) { e.preventDefault && e.preventDefault(), e.returnValue = false; var up = firefox && e.detail < 0 || e.wheelDelta > 0; doc.body.scrollTop = doc.documentElement.scrollTop += up ? -50 : 50; }
+        function bindMouseWhee(ifr) {
+            try { var doc = ifr.contentWindow.document; firefox ? doc.addEventListener('DOMMouseScroll', function (e) { MouseWheel(e, doc) }, false) : (doc.onmousewheel = function (e) { MouseWheel(e || ifr.contentWindow.event, doc) }); } catch (e) { alert('Error' + e); }
+        }
+    </script>
+</body>
+
+</html>
+
